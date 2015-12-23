@@ -8,7 +8,7 @@ export default Ember.Component.extend({
       var allow = this.get('closeOnOverlayClick');
 
       if (allow && this.get('close')) {
-        this.sendAction('close');
+        this.sendAction('close', true);
       }
     }
   }

@@ -63,6 +63,12 @@ export default function () {
 }
 ```
 
+### API
+
+* `close` - Action. The action attribute for closing the modal, e.g. `close=(action 'closeModal')`. The action will have it's first argument
+  set to `true` if the modal was closed by clicking the overlay.
+* `closeOnOverlayClick` - Boolean. Flag enabling triggering the close via clicking the overlay/backdrop.
+
 
 ## Developing
 
