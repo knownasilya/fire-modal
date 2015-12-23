@@ -3,6 +3,7 @@
 Bootstrap Modal (w/ animation) addon for Ember CLI
 
 [![Build Status](https://travis-ci.org/knownasilya/bootstrap-modal.svg)](https://travis-ci.org/knownasilya/bootstrap-modal)
+[![npm version](https://badge.fury.io/js/bootstrap-modal.svg)](https://badge.fury.io/js/bootstrap-modal)
 [![Ember Observer Score](http://emberobserver.com/badges/bootstrap-modal.svg)](http://emberobserver.com/addons/bootstrap-modal)
 
 ## Usage
