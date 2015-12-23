@@ -40,7 +40,7 @@ every ones needs are different. The following is a simple example of what you ca
         </button>
       </div>
     {{/bootstrap-modal}}
-  {{/with}
+  {{/with}}
 {{/if}}
 ```
 
