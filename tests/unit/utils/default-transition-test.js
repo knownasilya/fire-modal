@@ -1,4 +1,4 @@
-import defaultTransition from '../../../utils/default-transition';
+import defaultTransition from 'bootstrap-modal/utils/default-transition';
 import { module, test } from 'qunit';
 
 module('Unit | Utility | default transition');

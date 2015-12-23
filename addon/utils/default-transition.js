@@ -6,7 +6,7 @@ const options = {
 };
 
 export default function defaultTransition(context) {
-  if (typeof context.transition !== 'function') {
+  if (!context || typeof context.transition !== 'function') {
     throw new Error('[bootstrap-modal] Invalid transitions context supplied');
   }
 

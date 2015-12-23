@@ -44,10 +44,10 @@
     "ui"
   ],
   "dependencies": {
-    "liquid-tether": "pzuraq/liquid-tether#23f7494",
+    "liquid-tether": "0.1.10",
     "liquid-fire": "knownasilya/liquid-fire#patch-1",
-    "ember-cli-htmlbars": "^1.0.1",
-    "ember-cli-babel": "^5.1.5"
+    "ember-cli-htmlbars": "1.0.1",
+    "ember-cli-babel": "5.1.5"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
