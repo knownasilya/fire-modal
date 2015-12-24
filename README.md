@@ -66,7 +66,10 @@ export default function () {
 ### Install Bootstrap
 
 The above instructions will make the modal functional, but it will not
-look like the bootstrap modal.
+look like the bootstrap modal. The following instructions will help you
+get the styles setup.
+
+First install the bootstrap dependency:
 
 ```no-highlight
 bower install bootstrap --save-dev
@@ -82,17 +85,22 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  // The actual styles, which make the modal look good!
   app.import(app.bowerDirectory + '/bootstrap/dist/css/bootstrap.css');
+
   // The scripts are not necessary for the modal, but you might want them for other
   // bootstrap features.
   app.import(app.bowerDirectory + '/bootstrap/dist/js/bootstrap.js');
+
+  // Any other imports you might have..
 
   return app.toTree();
 };
 ```
 
 Note: If you're using LESS or SASS, then you can import
-those files in your styles.
+those files in your styles. This would also help if you only want
+the modal styles and want to pick and choose your files.
 
 ### API
 
