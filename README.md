@@ -63,6 +63,37 @@ export default function () {
 }
 ```
 
+### Install Bootstrap
+
+The above instructions will make the modal functional, but it will not
+look like the bootstrap modal.
+
+```no-highlight
+bower install bootstrap --save-dev
+```
+
+Edit your `ember-cli-build.js` to look similar to the following:
+
+```js
+var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
+
+module.exports = function(defaults) {
+  var app = new EmberAddon(defaults, {
+    // Add options here
+  });
+
+  app.import(app.bowerDirectory + '/bootstrap/dist/css/bootstrap.css');
+  // The scripts are not necessary for the modal, but you might want them for other
+  // bootstrap features.
+  app.import(app.bowerDirectory + '/bootstrap/dist/js/bootstrap.js');
+
+  return app.toTree();
+};
+```
+
+Note: If you're using LESS or SASS, then you can import
+those files in your styles.
+
 ### API
 
 * `close` - Action. The action attribute for closing the modal, e.g. `close=(action 'closeModal')`. The action will have it's first argument
