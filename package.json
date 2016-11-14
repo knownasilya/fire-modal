@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-modal",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Bootstrap Modal (w/ animation) addon for Ember CLI",
   "directories": {
     "doc": "doc",
