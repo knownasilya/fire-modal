@@ -8,7 +8,7 @@ module.exports = {
   afterInstall: function() {
     return this.addAddonToProject({
       name: 'liquid-fire',
-      version: '0.23.0'
+      version: '0.25.0'
     });
   }
 };
