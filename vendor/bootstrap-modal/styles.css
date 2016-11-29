@@ -8,12 +8,9 @@
 
 .modal-dialog {
   z-index: 2002;
+  right: 0;
   margin: 0 auto !important;
   padding: 10px !important;
-}
-
-.modal-dialog.velocity-animating {
-  right: 0;
 }
 
 @media (min-width: 768px) {
