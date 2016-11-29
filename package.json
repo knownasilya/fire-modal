@@ -43,10 +43,10 @@
     "ui"
   ],
   "dependencies": {
-    "liquid-tether": "1.1.1",
-    "liquid-fire": "0.26.5",
+    "ember-cli-babel": "5.1.6",
     "ember-cli-htmlbars": "^1.1.0",
-    "ember-cli-babel": "5.1.6"
+    "liquid-fire": "0.26.5",
+    "liquid-wormhole": "^2.0.2"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
