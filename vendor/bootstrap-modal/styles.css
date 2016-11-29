@@ -1,5 +1,8 @@
 .liquid-destination.has-wormholes {
+  top: 0;
+  right: 0;
   bottom: 0;
+  left: 0;
   overflow-y: auto;
 }
 
@@ -7,6 +10,10 @@
   z-index: 2002;
   margin: 0 auto !important;
   padding: 10px !important;
+}
+
+.modal-dialog.velocity-animating {
+  right: 0;
 }
 
 @media (min-width: 768px) {
