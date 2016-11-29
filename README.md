@@ -16,7 +16,7 @@ Bootstrap Modal (w/ animation) addon for Ember CLI
 ember install bootstrap-modal
 ```
 
-:warning: This addon is only tested with Ember __v1.13__ and __2+__. Use at your own risk otherwise.
+:warning: This addon requires Ember version __2.3+__.
 
 ### Using
 
