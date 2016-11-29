@@ -3,6 +3,7 @@ const options = {
   easing: 'easeInOutQuint'
 };
 const crossOptions = {
+  duration: 700,
   maxOpacity: 0.8
 };
 
