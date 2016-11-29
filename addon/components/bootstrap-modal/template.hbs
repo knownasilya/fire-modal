@@ -1,9 +1,11 @@
 {{#liquid-wormhole
   to='bootstrap-modal'}}
-  <div class="modal-backdrop {{if closeOnOverlayClick 'clickable'}}" {{action 'overlayClick'}}></div>
-  <div class="modal-dialog">
-    <div class="modal-content">
-      {{yield}}
+  <div>
+    <div class="modal-backdrop {{if closeOnOverlayClick 'clickable'}}" {{action 'overlayClick'}}></div>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        {{yield}}
+      </div>
     </div>
   </div>
 {{/liquid-wormhole}}
