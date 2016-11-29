@@ -2,6 +2,9 @@ const options = {
   duration: 700,
   easing: 'easeInOutQuint'
 };
+const crossOptions = {
+  maxOpacity: 0.8
+};
 
 export default function defaultTransition(context) {
   if (!context || typeof context.transition !== 'function') {
@@ -17,14 +20,14 @@ export default function defaultTransition(context) {
       use: ['to-down', options]
     }, {
       pick: '.modal-backdrop',
-      use: 'crossFade'
+      use: ['crossFade', crossOptions]
     }),
     context.reverse('explode', {
       pick: '.modal-dialog',
       use: ['to-up', options]
     }, {
       pick: '.modal-backdrop',
-      use: 'crossFade'
+      use: ['crossFade', crossOptions]
     })
   );
 }
