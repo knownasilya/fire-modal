@@ -135,4 +135,4 @@ to this addon.
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
 
-[ember-version]: https://embadge.io/v1/badge.svg?start=1.13.0
+[ember-version]: https://embadge.io/v1/badge.svg?start=2.3.0
