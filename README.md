@@ -25,26 +25,21 @@ every ones needs are different. The following is a simple example of what you ca
 
 ```hbs
 {{#if showModal}}
-  {{#with (action 'toggleShowModal') as |toggle|}}
-    {{#bootstrap-modal close=(action toggle) closeOnOverlayClick=true}}
-      <div class="modal-header">
-        <button type="button" class="close" aria-label="Close" {{action toggle}}>
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h4 class="modal-title">Test</h4>
-      </div>
+  {{#bootstrap-modal close=(action 'toggleShowModal') closeOnOverlayClick=true as |modal|}}
+    {{#modal.header}}
+      <h4 class="modal-title">Test</h4>
+    {{/modal.header}}
 
-      <div class="modal-body">
-        Content Here
-      </div>
+    {{#modal.body}}
+      Test
+    {{/modal.body}}
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" {{action toggle}}>
-          Close
-        </button>
-      </div>
-    {{/bootstrap-modal}}
-  {{/with}}
+    {{#modal.footer as |close|}}
+      <button {{action close}} type="button" class="btn btn-primary">
+        Close
+      </button>
+    {{/modal.footer}}
+  {{/bootstrap-modal}}
 {{/if}}
 ```
 
