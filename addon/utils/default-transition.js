@@ -11,9 +11,7 @@ export default function defaultTransition(context) {
   return context.transition(
     context.hasClass('bootstrap-modal'),
     // hack to get reverse working..
-    context.toValue(current => {
-      return current.isVisible;
-    }),
+    context.toValue(true),
     context.use('explode', {
       pick: '.modal-dialog',
       use: ['to-down', options]
