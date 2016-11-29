@@ -1,5 +1,3 @@
-import { target } from 'liquid-tether';
-
 const options = {
   duration: 700,
   easing: 'easeInOutQuint'
@@ -11,7 +9,7 @@ export default function defaultTransition(context) {
   }
 
   return context.transition(
-    target('bootstrap-modal'),
+    context.hasClass('bootstrap-modal'),
     // hack to get reverse working..
     context.toValue(current => {
       return current.isVisible;
