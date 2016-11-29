@@ -46,8 +46,10 @@
   "dependencies": {
     "ember-cli-babel": "^5.1.7",
     "ember-cli-htmlbars": "^1.0.10",
-    "liquid-fire": "0.26.5",
     "liquid-wormhole": "^2.0.2"
+  },
+  "peerDependencies": {
+    "liquid-fire": "0.26.*"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
