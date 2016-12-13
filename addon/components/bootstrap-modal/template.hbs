@@ -1,7 +1,7 @@
 {{#liquid-wormhole
   stack='bootstrap-modal' class='bootstrap-modal'}}
   <div class="modal-backdrop {{if closeOnOverlayClick 'clickable'}}" {{action 'overlayClick'}}></div>
-  <div class="modal-dialog">
+  <div class="modal-dialog {{if customClassName customClassName}}">
     <div class="modal-content">
       {{yield (hash
         header=(component 'bootstrap-modal-header' close=(action close))
