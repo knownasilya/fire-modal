@@ -1,9 +1,9 @@
 const options = {
-  duration: 700,
+  duration: 400,
   easing: 'easeInOutQuint'
 };
 const crossOptions = {
-  duration: 700,
+  duration: 400,
   maxOpacity: 0.8
 };
 
