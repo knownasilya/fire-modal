@@ -9,7 +9,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember try:each"
+    "test": "ember try:each",
+    "deploy": "ember deploy production"
   },
   "repository": "https://github.com/knownasilya/bootstrap-modal",
   "engines": {
