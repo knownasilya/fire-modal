@@ -1,11 +1,3 @@
-.liquid-destination.has-wormholes {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow-y: auto;
-}
-
 .bootstrap-modal {
   position: fixed;
   top: 0;
@@ -20,15 +12,15 @@
   position: relative;
   z-index: 2002;
   right: 0;
-  margin: 0 auto !important;
-  padding: 10px !important;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 @media (min-width: 768px) {
   .modal-dialog {
     width: 600px;
-    margin: 0 auto !important;
-    padding: 30px !important;
+    margin: 0 auto;
+    padding: 30px;
   }
 }
 
