@@ -25,7 +25,7 @@ every ones needs are different. The following is a simple example of what you ca
 
 ```hbs
 {{#if showModal}}
-  {{#bootstrap-modal close=(action 'toggleShowModal') closeOnOverlayClick=true as |modal|}}
+  {{#bootstrap-modal close=(action 'toggleShowModal') closeOnOverlayClick=true dialogClass='my-dialog' as |modal|}}
     {{#modal.header}}
       <h4 class="modal-title">Test</h4>
     {{/modal.header}}
@@ -105,6 +105,7 @@ the modal styles and want to pick and choose your files.
 * `close` - Action. The action attribute for closing the modal, e.g. `close=(action 'closeModal')`. The action will have it's first argument
   set to `true` if the modal was closed by clicking the overlay.
 * `closeOnOverlayClick` - Boolean. Flag enabling triggering the close via clicking the overlay/backdrop.
+* `dialogClass` - String. Custom CSS class that will be applied to the modal-dialog in order to enable custom styling.
 
 
 ## Developing
