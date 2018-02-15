@@ -10,7 +10,8 @@
     "build": "ember build",
     "start": "ember server",
     "test": "ember try:each",
-    "deploy": "ember deploy production"
+    "deploy": "ember deploy production",
+    "release": "standard-version"
   },
   "repository": "https://github.com/knownasilya/bootstrap-modal",
   "engines": {
@@ -38,7 +39,8 @@
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
     "liquid-fire": "0.26.7",
-    "loader.js": "^4.0.10"
+    "loader.js": "^4.0.10",
+    "standard-version": "^4.3.0"
   },
   "keywords": [
     "ember-addon",
