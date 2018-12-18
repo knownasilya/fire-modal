@@ -1,10 +1,9 @@
-/* jshint node: true */
 'use strict';
 
 module.exports = {
-  name: 'bootstrap-modal',
+  name: require('./package').name,
 
-  included: function(app) {
+  included(app) {
     this._super.included(app);
 
     // see: https://github.com/ember-cli/ember-cli/issues/3718
