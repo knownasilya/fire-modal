@@ -1,15 +1,18 @@
-<h2 id="title">Welcome to Ember</h2>
+<h2 id='title'>bootstrap-modal</h2>
 
 {{outlet}}
 
-<button type="button" class="btn btn-primary" onclick={{action 'toggleShow'}}>
+<button type='button' class='btn btn-primary' onclick={{action 'toggleShow'}}>
   Show Modal
 </button>
 
-{{#if showModal}}
-  {{#bootstrap-modal close=(action 'toggleShow') closeOnOverlayClick=true as |modal|}}
+{{#if this.showModal}}
+  {{#bootstrap-modal
+    close=(action 'toggleShow')
+    closeOnOverlayClick=true
+  as |modal|}}
     {{#modal.header}}
-      <h4 class="modal-title">Test</h4>
+      <h4 class='modal-title'>Test</h4>
     {{/modal.header}}
 
     {{#modal.body}}
@@ -17,7 +20,7 @@
     {{/modal.body}}
 
     {{#modal.footer as |close|}}
-      <button {{action close}} type="button" class="btn btn-primary">
+      <button {{action close}} type='button' class='btn btn-primary'>
         Close
       </button>
     {{/modal.footer}}
