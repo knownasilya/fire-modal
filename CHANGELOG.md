@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.2.2"></a>
+## [2.2.2](https://github.com/knownasilya/bootstrap-modal/compare/v2.2.1...v2.2.2) (2018-12-18)
+
+
+### Bug Fixes
+
+* codemods ([c8e96e5](https://github.com/knownasilya/bootstrap-modal/commit/c8e96e5))
+* remove old bower deps ([1644790](https://github.com/knownasilya/bootstrap-modal/commit/1644790))
+* rename header close label as "Close Modal" ([6fedf36](https://github.com/knownasilya/bootstrap-modal/commit/6fedf36))
+* tests and outdated code and linting ([2e89252](https://github.com/knownasilya/bootstrap-modal/commit/2e89252))
+* update with ember-cli-update ([607db6e](https://github.com/knownasilya/bootstrap-modal/commit/607db6e))
+
+
+
 <a name="2.2.1"></a>
 ## [2.2.1](https://github.com/knownasilya/bootstrap-modal/compare/v2.2.0...v2.2.1) (2018-02-15)
 
