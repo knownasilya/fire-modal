@@ -15,7 +15,8 @@ Bootstrap Modal (w/ animation) addon for Ember CLI
 ember install bootstrap-modal
 ```
 
-:warning: This addon requires Ember version __2.3+__.
+:warning: This addon requires Ember version __2.3+__.  
+:blue_book: This addon requires jQuery, see this [guide](https://emberjs.com/deprecations/v3.x#optingintojquery) for details.
 
 ### Using
 
@@ -23,26 +24,26 @@ Usually you will want to create custom components based on this component, since
 every ones needs are different. The following is a simple example of what you can do.
 
 ```hbs
-{{#if showModal}}
-  {{#bootstrap-modal
-    close=(action 'toggleShowModal')
-    closeOnOverlayClick=true
-    dialogClass='my-dialog'
-  as |modal|}}
-    {{#modal.header}}
+{{#if this.showModal}}
+  <BootstrapModal
+    @close={{action (mut this.showModal) false}}
+    @closeOnOverlayClick={{true}}
+    @dialogClass='my-dialog'
+  as |modal|>
+    <modal.header>
       <h4 class='modal-title'>Test</h4>
-    {{/modal.header}}
+    </modal.header>
 
-    {{#modal.body}}
+    <modal.body>
       Test
-    {{/modal.body}}
+    </modal.body>
 
-    {{#modal.footer as |close|}}
+    <modal.footer as |close|>
       <button onclick={{action close}} type='button' class='btn btn-primary'>
         Close
       </button>
-    {{/modal.footer}}
-  {{/bootstrap-modal}}
+    </modal.footer>
+  </BootstrapModal>
 {{/if}}
 ```
 
