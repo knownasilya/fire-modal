@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.2.3"></a>
+## [2.2.3](https://github.com/knownasilya/bootstrap-modal/compare/v2.2.2...v2.2.3) (2018-12-19)
+
+
+### Bug Fixes
+
+* add ab polyfill for tests ([a0fd7ff](https://github.com/knownasilya/bootstrap-modal/commit/a0fd7ff))
+* bootstrap from npm ([2688883](https://github.com/knownasilya/bootstrap-modal/commit/2688883))
+* role on backdrop ([7871db7](https://github.com/knownasilya/bootstrap-modal/commit/7871db7))
+
+
+
 <a name="2.2.2"></a>
 ## [2.2.2](https://github.com/knownasilya/bootstrap-modal/compare/v2.2.1...v2.2.2) (2018-12-18)
 
