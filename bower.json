@@ -1,7 +1,0 @@
-{
-  "name": "bootstrap-modal",
-  "devDependencies": {
-    "bootstrap": "~3.3.7"
-  },
-  "version": "2.2.2"
-}
