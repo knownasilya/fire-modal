@@ -24,9 +24,13 @@ every ones needs are different. The following is a simple example of what you ca
 
 ```hbs
 {{#if showModal}}
-  {{#bootstrap-modal close=(action 'toggleShowModal') closeOnOverlayClick=true dialogClass='my-dialog' as |modal|}}
+  {{#bootstrap-modal
+    close=(action 'toggleShowModal')
+    closeOnOverlayClick=true
+    dialogClass='my-dialog'
+  as |modal|}}
     {{#modal.header}}
-      <h4 class="modal-title">Test</h4>
+      <h4 class='modal-title'>Test</h4>
     {{/modal.header}}
 
     {{#modal.body}}
@@ -34,7 +38,7 @@ every ones needs are different. The following is a simple example of what you ca
     {{/modal.body}}
 
     {{#modal.footer as |close|}}
-      <button {{action close}} type="button" class="btn btn-primary">
+      <button onclick={{action close}} type='button' class='btn btn-primary'>
         Close
       </button>
     {{/modal.footer}}
@@ -69,25 +73,25 @@ get the styles setup.
 First install the bootstrap dependency:
 
 ```no-highlight
-bower install bootstrap --save-dev
+npm install bootstrap@3 --save-dev
 ```
 
 Edit your `ember-cli-build.js` to look similar to the following:
 
 ```js
-var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
+const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 module.exports = function(defaults) {
-  var app = new EmberAddon(defaults, {
+  let app = new EmberAddon(defaults, {
     // Add options here
   });
 
   // The actual styles, which make the modal look good!
-  app.import(app.bowerDirectory + '/bootstrap/dist/css/bootstrap.css');
+  app.import('node_modules/bootstrap/dist/css/bootstrap.css');
 
   // The scripts are not necessary for the modal, but you might want them for other
   // bootstrap features.
-  app.import(app.bowerDirectory + '/bootstrap/dist/js/bootstrap.js');
+  app.import('node_modules/bootstrap/bootstrap/dist/js/bootstrap.js');
 
   // Any other imports you might have..
 
@@ -106,31 +110,6 @@ the modal styles and want to pick and choose your files.
 * `closeOnOverlayClick` - Boolean. Flag enabling triggering the close via clicking the overlay/backdrop.
 * `dialogClass` - String. Custom CSS class that will be applied to the modal-dialog in order to enable custom styling.
 
+## Contributing
 
-## Developing
-
-Follow the steps below to start the dummy app, and work on contributing
-to this addon.
-
-### Installation
-
-* `git clone` this repository
-* `npm install`
-* `bower install`
-
-### Running
-
-* `ember server`
-* Visit your app at http://localhost:4200.
-
-### Running Tests
-
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+See the [Contributing](CONTRIBUTING.md) guide.
