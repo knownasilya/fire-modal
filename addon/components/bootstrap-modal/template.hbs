@@ -2,7 +2,11 @@
   stack='bootstrap-modal'
   class='bootstrap-modal'
 }}
-  <div class='modal-backdrop {{if closeOnOverlayClick 'clickable'}}' {{action 'overlayClick'}}></div>
+  <div
+    class='modal-backdrop {{if closeOnOverlayClick 'clickable'}}'
+    role='button'
+    {{action 'overlayClick'}}
+  ></div>
   <div class='modal-dialog {{if dialogClass dialogClass}}'>
     <div class='modal-content'>
       {{yield (hash
